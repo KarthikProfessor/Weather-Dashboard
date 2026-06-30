@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⛅ Weather API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="weather-card-container">
+    <div class="search-field">
+      <input class="search-bar" type="text" placeholder="Enter city name">
+      <button class="search-btn" onclick="fetchingData()">
+        <img class="search-img" src="images/search.png" alt="search-icon">
+      </button>
+    </div>
+
+    <div class="weather-details">
+      <div class="weather-display">
+        <img class="weather-icon" id="weatherIcon">
+        <h1 class="temp"></h1>
+        <h2 class="city" id="cityName"></h2>
+      </div>
+
+      <div class="extra-details">
+        <div class="details">
+          <img class="icon" src="./images/humidity.png">
+          <div>
+            <p class="humidity" id="humidityPercent"></p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="details">
+          <img class="icon" src="./images/wind.png">
+          <div>
+            <p class="wind-speed" id="windSpeed"></p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
